@@ -1,0 +1,5 @@
+# Netlify-instellingen. Netlify leest dit automatisch bij een Git-koppeling,
+# zodat je niets manueel hoeft in te stellen.
+[build]
+  command = "npm run build"
+  publish = "dist"
