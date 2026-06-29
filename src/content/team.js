@@ -107,7 +107,7 @@ export const foeriers = [
   {
     naam: 'Ella',
     rol: 'Foerier',
-    foto: 'ella.jpg',
+    foto: 'ella.jpeg',
     totem: '',
     studie: '',
     hobbys: '',
@@ -117,7 +117,7 @@ export const foeriers = [
   {
     naam: 'Louise',
     rol: 'Foerier',
-    foto: 'louise.jpg',
+    foto: 'louise.jpeg',
     totem: '',
     studie: '',
     hobbys: '',
