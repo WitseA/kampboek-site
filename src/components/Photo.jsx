@@ -18,10 +18,16 @@ export default function Photo({ src, alt, className = '' }) {
     )
   }
 
+  // Een volledige URL (https://...) wordt rechtstreeks gebruikt.
+  // Anders zoeken we het bestand in de map public/photos/.
+  const bron = /^https?:\/\//.test(src)
+    ? src
+    : `${import.meta.env.BASE_URL}photos/${src}`
+
   return (
     <img
       className={`photo ${className}`}
-      src={`${import.meta.env.BASE_URL}photos/${src}`}
+      src={bron}
       alt={alt}
       loading="lazy"
       onError={() => setMislukt(true)}

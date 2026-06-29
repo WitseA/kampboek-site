@@ -5,6 +5,7 @@ import Photo from './Photo.jsx'
 export default function PersonCard({ persoon }) {
   const velden = [
     { label: 'Totem', waarde: persoon.totem },
+    { label: 'Studie / job', waarde: persoon.studie },
     { label: "Hobby's", waarde: persoon.hobbys },
     { label: 'Weetje', waarde: persoon.weetje },
     { label: 'Favoriete Wonderland-figuur', waarde: persoon.figuur },
