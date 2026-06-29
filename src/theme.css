@@ -321,6 +321,55 @@ h1, h2, h3 {
 .infoblock--wide { grid-column: 1 / -1; }
 .infoblock__title { font-size: 1.4rem; margin-bottom: 0.8rem; }
 
+/* Bestemming: tekst + adres naast de ingebedde kaart */
+.bestemming {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 1.8rem;
+  align-items: stretch;
+}
+.bestemming__info { display: flex; flex-direction: column; }
+.bestemming__info .address { margin-top: auto; }
+.bestemming__info .btn { align-self: flex-start; margin-top: 1rem; }
+
+.bestemming__map {
+  margin: 0;
+  position: relative;
+  border-radius: var(--radius-s);
+  overflow: hidden;
+  min-height: 280px;
+  box-shadow: var(--schaduw-zacht);
+  border: 3px solid var(--wit);
+  outline: 2px dashed var(--lavendel-rand);
+  outline-offset: -8px;
+}
+.bestemming__map iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  border: 0;
+  filter: saturate(1.05);
+}
+.bestemming__map-caption {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(4px);
+  color: var(--paars-diep);
+  font-family: var(--font-titel);
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  box-shadow: var(--schaduw-zacht);
+  pointer-events: none;
+}
+
 .address, .emergency {
   display: flex;
   align-items: flex-start;
@@ -426,4 +475,11 @@ h1, h2, h3 {
   .daycard--reverse .daycard__body { padding: 1.5rem; }
 
   .info-grid { grid-template-columns: 1fr; }
+
+  .bestemming { grid-template-columns: 1fr; }
+  .bestemming__map { min-height: 240px; }
+}
+
+@media (max-width: 760px) {
+  .bestemming__map {display: none;}
 }

@@ -14,6 +14,9 @@ export default function App() {
   const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
     info.bestemming.mapsZoekterm,
   )}`
+  const mapsEmbedUrl = `https://www.google.com/maps?q=${encodeURIComponent(
+    info.bestemming.mapsZoekterm,
+  )}&z=15&output=embed`
 
   return (
     <>
@@ -64,24 +67,42 @@ export default function App() {
           titel="Adres & Praktische info"
         >
           <div className="info-grid">
-            {/* Bestemming + adres */}
+            {/* Bestemming + adres + kaart */}
             <InfoBlock titel={info.bestemming.titel} className="infoblock--wide">
-              {info.bestemming.tekst.map((p, i) => (
-                <p key={i}>{p}</p>
-              ))}
-              <div className="address">
-                <span className="address__icon" aria-hidden="true">📍</span>
-                <span>
-                  <strong>{info.bestemming.adres.naam}</strong>
-                  <br />
-                  {info.bestemming.adres.straat}
-                  <br />
-                  {info.bestemming.adres.plaats}
-                </span>
+              <div className="bestemming">
+                <div className="bestemming__info">
+                  {info.bestemming.tekst.map((p, i) => (
+                    <p key={i}>{p}</p>
+                  ))}
+                  <div className="address">
+                    <span className="address__icon" aria-hidden="true">📍</span>
+                    <span>
+                      <strong>{info.bestemming.adres.naam}</strong>
+                      <br />
+                      {info.bestemming.adres.straat}
+                      <br />
+                      {info.bestemming.adres.plaats}
+                    </span>
+                  </div>
+                  <a className="btn" href={mapsUrl} target="_blank" rel="noreferrer">
+                    Routebeschrijving openen
+                  </a>
+                </div>
+
+                <figure className="bestemming__map">
+                  <iframe
+                    title={`Kaart – ${info.bestemming.adres.naam}, ${info.bestemming.adres.plaats}`}
+                    src={mapsEmbedUrl}
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    allowFullScreen
+                  />
+                  <figcaption className="bestemming__map-caption">
+                    <span aria-hidden="true">🐇</span>
+                    Ons kampterrein in Mol
+                  </figcaption>
+                </figure>
               </div>
-              <a className="btn" href={mapsUrl} target="_blank" rel="noreferrer">
-                Bekijk op kaart
-              </a>
             </InfoBlock>
 
             {/* Brief versturen */}
