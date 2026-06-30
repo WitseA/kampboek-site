@@ -51,7 +51,7 @@ export const days = [
     scene:
       'Disney-film (1951) · De Wijze Rups zit op de paddenstoel (“Wie ben jij?”) en verandert daarna in een vlinder. ± minuut 33–40',
     tekst:
-      'Tijd om er eens goed van te genieten: het is vetzakkendag! De kabouters mogen zich uitleven in een dag vol vettigheid. In de namiddag schakelen we een versnelling lager met een heerlijk wellnessmoment om uit te rusten en om ons terug op te knappen. En wanneer de avond valt, beleven we een magisch nachtspel om deze dag tot een mooi eind te brengen.',
+      'Wat er aan geen enkel kamp kan missen is vetzakkendag. De kabouters mogen zich uitleven in een dag vol vettigheid. In de namiddag schakelen we een versnelling lager met een heerlijk wellnessmoment om uit te rusten en om ons terug op te knappen. En wanneer de avond valt, doen we nog een nachtspel om deze dag tot een mooi eind te brengen.',
   },
   {
     nr: 6,
