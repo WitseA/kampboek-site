@@ -1,13 +1,5 @@
 // =============================================================
 //  LEIDING & FOERIERS
-//  Per persoon: naam, foto (bestandsnaam in public/photos/) en de invulvelden.
-//
-//  Een veld (totem / studie / hobbys / weetje / figuur) dat je leeg laat ('')
-//  wordt NIET getoond op de site. Vul aan wat je kwijt wilt.
-//
-//  Foto toevoegen: zet de foto in public/photos/ en typ de bestandsnaam,
-//  bv. foto: 'witse.jpg'. Een volledige https-URL mag ook.
-//  Laat leeg ('') voor een placeholder.
 // =============================================================
 
 export const leiding = [
@@ -108,7 +100,7 @@ export const foeriers = [
     naam: 'Ella',
     rol: 'Foerier',
     foto: 'ella.jpeg',
-    totem: '',
+    totem: 'Blijhartige Lumba Lumba',
     studie: '',
     hobbys: '',
     weetje: '',
@@ -118,7 +110,7 @@ export const foeriers = [
     naam: 'Louise',
     rol: 'Foerier',
     foto: 'louise.jpeg',
-    totem: '',
+    totem: 'Miraculeuze Syngnathida',
     studie: '',
     hobbys: '',
     weetje: '',
@@ -126,6 +118,5 @@ export const foeriers = [
   },
 ]
 
-// Korte intro boven de foeriers.
 export const foeriersIntro =
   'Zonder onze foeriers geen lekker eten en geen draaiend kamp. Ook zij stellen zich graag even voor!'

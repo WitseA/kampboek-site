@@ -1,7 +1,5 @@
 // =============================================================
 //  ALGEMENE KAMPGEGEVENS
-//  Pas hier de titel, datums en de teksten van de cover/het slot aan.
-//  Verander enkel de tekst tussen de aanhalingstekens "...".
 // =============================================================
 
 export const camp = {

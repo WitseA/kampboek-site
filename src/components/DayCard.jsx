@@ -6,7 +6,7 @@ export default function DayCard({ dag, omgekeerd }) {
   return (
     <article className={`daycard ${omgekeerd ? 'daycard--reverse' : ''}`}>
       <div className="daycard__photo">
-        <Photo src={dag.foto} alt={`Dag ${dag.nr} – ${dag.titel}`} />
+        <Photo src={dag.foto} alt={`Dag ${dag.nr} – ${dag.titel}`} placeholder={dag.scene} />
         <span className="daycard__badge">Dag {dag.nr}</span>
       </div>
       <div className="daycard__body">

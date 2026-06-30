@@ -5,7 +5,10 @@ import { useState } from 'react'
 // Is er geen bestandsnaam, of bestaat het bestand (nog) niet, dan
 // verschijnt er een vriendelijke Wonderland-placeholder i.p.v. een
 // gebroken afbeelding.
-export default function Photo({ src, alt, className = '' }) {
+//
+// Met "placeholder" kun je een tekstje meegeven dat in de placeholder
+// verschijnt (bv. welke scène uit de film je hier wil screenshotten).
+export default function Photo({ src, alt, className = '', placeholder }) {
   const [mislukt, setMislukt] = useState(false)
   const heeftFoto = src && !mislukt
 
@@ -13,7 +16,7 @@ export default function Photo({ src, alt, className = '' }) {
     return (
       <div className={`photo photo--placeholder ${className}`} role="img" aria-label={alt}>
         <span className="photo__icon" aria-hidden="true">🐇</span>
-        <span className="photo__hint">Foto volgt</span>
+        <p className="photo__hint">{placeholder || 'Foto volgt'}</p>
       </div>
     )
   }

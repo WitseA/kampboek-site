@@ -1,10 +1,8 @@
 // =============================================================
 //  ADRES & PRAKTISCHE INFORMATIE
-//  Pas hier het adres, het postadres en het noodnummer aan.
 // =============================================================
 
 export const info = {
-  // --- Onze bestemming ---
   bestemming: {
     titel: 'Onze bestemming',
     foto: 'kampterrein.jpg',
@@ -17,11 +15,9 @@ export const info = {
       straat: 'Martelarenstraat 157A',
       plaats: '2400 Mol',
     },
-    // Wordt gebruikt voor de "Bekijk op kaart"-knop (Google Maps).
     mapsZoekterm: 'Chiro Sprankel, Martelarenstraat 157A, 2400 Mol',
   },
 
-  // --- Een brief versturen? ---
   post: {
     titel: 'Een brief versturen?',
     tekst:
@@ -36,7 +32,6 @@ export const info = {
     tip: 'Tip: post je brief enkele dagen op voorhand, zo komt hij zeker op tijd aan. Wil je iets meegeven bij vertrek? Geef het dan af aan de leiding.',
   },
 
-  // --- Contact & noodnummer ---
   contact: {
     titel: 'Contact & noodnummer',
     tekst:
