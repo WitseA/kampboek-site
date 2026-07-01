@@ -3,21 +3,6 @@
 // =============================================================
 
 export const info = {
-  bestemming: {
-    titel: 'Onze bestemming',
-    foto: 'kampterrein.jpg',
-    tekst: [
-      'Dit jaar slaan we ons kamp op in het hartje van Mol, op het terrein van Chiro Sprankel. We verblijven in een gezellig gebouw met alles wat we nodig hebben.',
-      'We zitten vlak bij het centrum van Mol, met parken en speeltuinen op wandelafstand – niets ligt verder dan een kwartiertje stappen. De ideale uitvalsbasis voor onze Wonderland-avonturen!',
-    ],
-    adres: {
-      naam: 'Chiro Sprankel',
-      straat: 'Martelarenstraat 157A',
-      plaats: '2400 Mol',
-    },
-    mapsZoekterm: 'Chiro Sprankel, Martelarenstraat 157A, 2400 Mol',
-  },
-
   post: {
     titel: 'Een brief versturen?',
     tekst:

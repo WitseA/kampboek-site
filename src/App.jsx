@@ -67,43 +67,6 @@ export default function App() {
           titel="Adres & Praktische info"
         >
           <div className="info-grid">
-            {/* Bestemming + adres + kaart */}
-            <InfoBlock titel={info.bestemming.titel} className="infoblock--wide">
-              <div className="bestemming">
-                <div className="bestemming__info">
-                  {info.bestemming.tekst.map((p, i) => (
-                    <p key={i}>{p}</p>
-                  ))}
-                  <div className="address">
-                    <span className="address__icon" aria-hidden="true">📍</span>
-                    <span>
-                      <strong>{info.bestemming.adres.naam}</strong>
-                      <br />
-                      {info.bestemming.adres.straat}
-                      <br />
-                      {info.bestemming.adres.plaats}
-                    </span>
-                  </div>
-                  <a className="btn" href={mapsUrl} target="_blank" rel="noreferrer">
-                    Routebeschrijving openen
-                  </a>
-                </div>
-
-                <figure className="bestemming__map">
-                  <iframe
-                    title={`Kaart – ${info.bestemming.adres.naam}, ${info.bestemming.adres.plaats}`}
-                    src={mapsEmbedUrl}
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    allowFullScreen
-                  />
-                  <figcaption className="bestemming__map-caption">
-                    <span aria-hidden="true">🐇</span>
-                    Ons kampterrein in Mol
-                  </figcaption>
-                </figure>
-              </div>
-            </InfoBlock>
 
             {/* Brief versturen */}
             <InfoBlock titel={info.post.titel}>

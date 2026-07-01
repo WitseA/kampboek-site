@@ -15,9 +15,6 @@ export default function Footer() {
           <p key={i} className="footer__text">{alinea}</p>
         ))}
         <p className="footer__signoff">{slot.ondertekening}</p>
-        <p className="footer__meta">
-          {camp.groep} · {camp.tak} · {camp.ondertitel}
-        </p>
       </div>
     </footer>
   )
