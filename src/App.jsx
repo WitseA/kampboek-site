@@ -11,13 +11,6 @@ import { leiding, foeriers, foeriersIntro } from './content/team.js'
 import { info } from './content/info.js'
 
 export default function App() {
-  const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-    info.bestemming.mapsZoekterm,
-  )}`
-  const mapsEmbedUrl = `https://www.google.com/maps?q=${encodeURIComponent(
-    info.bestemming.mapsZoekterm,
-  )}&z=15&output=embed`
-
   return (
     <>
       <Nav />
