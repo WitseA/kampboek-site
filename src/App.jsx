@@ -22,7 +22,7 @@ export default function App() {
           id="kampboek"
           eyebrow="Het kampprogramma"
           titel="Het Kampboek"
-          intro="Hieronder lees je dag per dag wat de kabouters beleven in Wonderland. Een tipje van de sluier… maar niet verklappen aan de kinderen!"
+          intro="Hieronder lees je dag per dag wat de kabouters beleven in Wonderland. Niet verklappen aan de kabouters!"
         >
           <div className="days">
             {days.map((dag, i) => (

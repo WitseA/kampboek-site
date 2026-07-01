@@ -421,7 +421,7 @@ h1, h2, h3 {
   box-shadow: var(--schaduw);
   margin-bottom: 2rem;
 }
-.footer__photo .photo { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+.footer__photo .photo { width: 100%; height: auto; display: block; }
 .footer__title { font-size: 2rem; margin-bottom: 1rem; }
 .footer__text { color: var(--tekst); }
 .footer__signoff {

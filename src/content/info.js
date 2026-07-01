@@ -14,7 +14,6 @@ export const info = {
       'Martelarenstraat 157A',
       '2400 Mol',
     ],
-    tip: 'Tip: post je brief enkele dagen op voorhand, zo komt hij zeker op tijd aan. Wil je iets meegeven bij vertrek? Geef het dan af aan de leiding.',
   },
 
   contact: {
